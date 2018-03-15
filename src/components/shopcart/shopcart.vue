@@ -281,7 +281,8 @@
           color:rgb(7,17,27)
         .empty
           float:right
-          font-size 12px
+          font-size: 12px
+          cursor: pointer
           color: rgb(0,160,220)
       .list-content
         padding:0 18px
