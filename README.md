@@ -1,6 +1,27 @@
-# package-demo
+# vue-sell
+> mock数据存放在GitHub Gist，用vue-resource获取
 
-> A Vue.js project
+技术栈：JavaScript/jQuery/Vue/Webpack
+
+点击预览：<a target="_blank" href="https://vue-sell.zhouqichao.com">vue-sell</a>
+
+## 简介
+1. 商家简介
+	+ 活动展示
+	+ 公告详情
+2. 商品展示
+	+ 商品评分
+	+ 评论分类
+	+ 商品分类
+	+ 分类商品展示
+3. 商家详情
+	+ 销售信息
+	+ 活动公告
+	+ 商家实景
+	+ 商家信息
+
+4. 购物车
+
 
 ## Build Setup
 
