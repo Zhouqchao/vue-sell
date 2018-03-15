@@ -89,7 +89,6 @@
     },
     created(){
       this.$http.get('https://gist.githubusercontent.com/Zhouqchao/64bfb02f304a0d6075c171285569e54d/raw/4590f3e79dccfc78caf740e1c1507426f7de84f0/vue-sell-data.json').then((res)=>{
-        
         console.clear();
         res = res.body.ratings;
           this.ratings = res;
