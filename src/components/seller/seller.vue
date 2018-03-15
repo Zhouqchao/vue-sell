@@ -94,12 +94,30 @@
         return this.favorite ? '已收藏':'收藏';
       }
     },
+    mouted() {
+      this.$nextTick(()=> {
+        this._initScroll();
+        this._initPics();
+      });
+    },
+    created(){
+      this.classMap = ['decrease','discount','special','invoice','guarantee'];
+    },
+    watch:{
+      'seller'(){
+        this.$nextTick(() => {
+          this._initScroll();
+          this._initPics();
+        });
+      }
+    },
     methods:{
       toggleFavorite(e){
         if(!e._constructed){
           return;
         }
         this.favorite = !this.favorite;
+        console.log('favorite: ',this.favorite);
       },
       _initScroll(){
         if (!this.scroll) {
@@ -132,23 +150,6 @@
     components:{
       star,
       split
-    },
-    created(){
-      this.classMap = ['decrease','discount','special','invoice','guarantee'];
-    },
-    watch:{
-      'seller'(){
-        this.$nextTick(() => {
-          this._initScroll();
-          this._initPics();
-        });
-      }
-    },
-    mouted() {
-      this.$nextTick(()=> {
-        this._initScroll();
-        this._initPics();
-      });
     }
   };
 </script>
