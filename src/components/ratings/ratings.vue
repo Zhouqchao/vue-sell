@@ -121,7 +121,7 @@
         });
       },
       toggleContent(onlyContent){
-        this.onlyContent = onlyContent;
+        this.onlyContent = !onlyContent;
         this.$nextTick(()=>{
           this.scroll.refresh();
         });
